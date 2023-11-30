@@ -3,13 +3,6 @@ import { Handle, Position } from "reactflow";
 import "../View/node.css";
 
 export default memo(({ data, isConnectable, id, selected }) => {
-  const ClickedNode = () => {
-    selected = true;
-    console.log(data.sub_no, "is clicked", id, selected, data.category);
-    return selected;
-  };
-
-  const isPass = true;
 
   return (
     <>

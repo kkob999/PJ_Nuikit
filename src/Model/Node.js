@@ -50,10 +50,8 @@ export const nodes = [
     data: { sub_no: "001225", sub_name: "English in Sci", category: "eng" },
     position: { x: posX2year2sem, y: posY },
     type: "gen_node",
-    // sourcePosition: "left",
     targetPosition: "left",
     selected: false,
-    // className: "node-subject",
   },
   {
     id: "5",

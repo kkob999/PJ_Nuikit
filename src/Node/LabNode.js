@@ -3,12 +3,6 @@ import { Handle, Position } from "reactflow";
 import "../View/node.css"
 
 export default memo(({ data, isConnectable, id, selected }) => {
-  const ClickedNode = () => {
-    selected = true
-    console.log(data.sub_no, "is clicked", id, selected,data.category );
-    // return data.sub_no, selected;
-    return selected;
-  };
 
   let typeColor = data.category === 'gen_lab' ? "#8850EA" : "#FF7D0F";
 

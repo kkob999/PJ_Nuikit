@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="contain" style={{ display: "flex", flexDirection: "row" }}>
       <Navbar />
-      <FlowElk />
+      <Flow/>
     </div>
   );
 }

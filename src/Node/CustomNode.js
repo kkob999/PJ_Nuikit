@@ -3,18 +3,12 @@ import { Handle, Position } from "reactflow";
 import "../View/node.css"
 
 export default memo(({ data, isConnectable, id, selected }) => {
-  const ClickedNode = () => {
-    selected = true
-    console.log(data.sub_no, "is clicked", id, selected,data.category );
-    // return data.sub_no, selected;
-    return selected;
-  };
+
   return (
     <>
       <Handle
         type="target"
         position={Position.Left}
-        // hidden = "true"
         style={{ opacity: 0 }}
         onConnect={(params) => console.log("handle onConnect", params)}
         isConnectable={isConnectable}
@@ -32,7 +26,6 @@ export default memo(({ data, isConnectable, id, selected }) => {
       <Handle
         type="source"
         position={Position.Right}
-        // hidden = "true"
         id="a"
         style={{opacity: 0}}
         isConnectable={isConnectable}
