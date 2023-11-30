@@ -1,7 +1,6 @@
 # PJ_Nuikit
-<br />
 src<br />
-|_Model<br />
+|_Model
 |   |_Node.js // Node for normal react-flow<br />
 |   |_node-edges.js // Node for elkjs<br />
 |<br />
