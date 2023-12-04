@@ -126,7 +126,7 @@ h5 {
 }
 
 .h2{
-    height:92%;
+    height:86%;
 }
 
 .button{
@@ -195,4 +195,10 @@ input:checked + .button::before{
 
 .coop-plan{
     color: white;
+}
+
+.op-contain{
+    margin-bottom: 1%;
+    margin-top: 1%;
+    justify-content: flex-end;
 }
