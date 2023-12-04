@@ -1,51 +1,56 @@
-.main{
+* {
+    margin: 0px;
+    padding: 0px;
+ }
+
+.main {
     justify-content: center;
 }
 
-.contain-subject1{
+.contain-subject1 {
     /* background-color: blue; */
     width: 20%;
     height: 90%;
     position: absolute;
     top: 5%;
     left: 4%;
-    display:block;
+    display: block;
     border: 3px solid #F3F3F3;
     border-radius: 10px;
 }
 
-.contain-subject2{
+.contain-subject2 {
     /* background-color:blueviolet; */
     width: 20%;
     height: 90%;
     position: absolute;
     top: 5%;
     left: 28%;
-    display:block;
+    display: block;
     border: 3px solid #F3F3F3;
     border-radius: 10px;
 }
 
-.contain-subject3{
+.contain-subject3 {
     /* background-color:aquamarine; */
     width: 20%;
     height: 90%;
     position: absolute;
     top: 5%;
     left: 52%;
-    display:block;
+    display: block;
     border: 3px solid #F3F3F3;
     border-radius: 10px;
 }
 
-.contain-subject4{
+.contain-subject4 {
     /* background-color:coral; */
     width: 20%;
     height: 90%;
     position: absolute;
     top: 5%;
     left: 76%;
-    display:block;
+    display: block;
     border: 3px solid #F3F3F3;
     border-radius: 10px;
 }
@@ -63,12 +68,12 @@
     border-left: 1px solid #F3F3F3;
 }
 
-h3{
+h3 {
     color: #F1485B;
     text-align: center;
 }
 
-h5{
+h5 {
     text-align: center;
     margin: 0;
     padding: 0;
@@ -79,7 +84,115 @@ h5{
     height: 100%;
 }
 
-.node-subject{
+.node-subject {
     width: 90px;
     height: 40px;
+}
+
+.flex {
+    display: flex;
+}
+
+.frame {
+    width: 48%;
+
+}
+
+.type-con {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.btw {
+    justify-content: space-between;
+}
+
+.node-frame {
+    width: auto;
+    height: auto;
+    border: 3px solid #F3F3F3;
+    /* margin-left: 2%;
+    margin-right: 2%; */
+}
+
+.h{
+    height: 45%;
+    /* background-color: #F1485B; */
+}
+
+.full-height {
+    /* background-color:aquamarine; */
+    height: 100%;
+}
+
+.h2{
+    height:92%;
+}
+
+.button{
+    background-color: #F1485B;
+    width: 30%;
+    height: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.button::before{
+    position: absolute;
+    content: '';
+    background-color: white;
+    width: 50%;
+    height: 24px;
+    border-radius: 40px;
+    margin: 3px;
+    transition: 0.3s;
+}
+
+.con-toggle{
+    /* background-color: black; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+input{
+    margin: 0px;
+    display: none;
+}
+
+input:checked + .normal-plan{
+    color: white;
+}
+
+input:checked + .button{
+    background-color: #F1485B;
+}
+
+input:checked + label p.normal-plan{
+    color: white;
+}
+
+input:checked + label p.coop-plan{
+    color: #F1485B;
+}
+
+input:checked + .button::before{
+    transform: translateX(96%);
+}
+
+.txt-toggle{
+    /* position: absolute; */
+    /* width: 50%; */
+    z-index: 100;
+    margin: auto;
+}
+
+.normal-plan{
+    color: #F1485B;
+}
+
+.coop-plan{
+    color: white;
 }
